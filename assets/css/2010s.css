@@ -7,10 +7,107 @@
 
 /* Write your CSS below (feel free to change the styles already here) */
 @font-face {
-	font-family: "AUTHENTIC Sans";
-	src: url("../fonts/authentic-sans-pro-60.woff2");
+	font-family: "Lato";
+	src: url("../fonts/Lato-Italic.ttf") format("truetype");
+	font-style: italic;
 }
+
+@font-face {
+	font-family: "Lato";
+	src: url("../fonts/Lato-Regular.ttf") format("truetype");
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "Lato";
+	src: url("../fonts/Lato-Light.ttf") format("truetype");
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: "Lato";
+	src: url("../fonts/Lato-LightItalic.ttf") format("truetype");
+	font-weight: 300;
+	font-style: italic;
+}
+
 body {
-	font-family: "AUTHENTIC Sans", sans-serif;
-	background-color: hsl(180deg, 100%, 50%);
+	font-family: "Lato";
+	font-weight: 300;
+	background: linear-gradient(lightblue,lightyellow);
+}
+
+.intro {
+	font-style: italic;
+	font-size: 16px;
+	color: rgb(91, 112, 112);
+	width: 500px;
+	margin-left: 50px;
+}
+
+.header {
+	display: flex;
+	font-family: Lato;
+	font-weight: 400;
+	letter-spacing: 0.8px;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 18px;
+	padding: 22px;
+}
+
+.header a {
+	border: 1px dotted burlywood;
+	padding: 8px 16px;
+	text-decoration: none;
+	color: black;
+	border-radius: 30px;
+	background-color: lightblue;
+	background-image: linear-gradient(burlywood,burlywood);
+	background-repeat: no-repeat;
+	background-size: 0% 100%;
+}
+
+.header a:hover {
+	background-size: 100% 100%;
+	transition: background-size 0.5s cubic-bezier(.4,0,.8,1);
+}
+
+.version {
+	display: flex;
+	gap: 20px;
+}
+
+.text {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 80px;
+	padding: 50px;
+}
+
+.links-card:hover {
+	font-style: italic;
+	font-weight: 400;
+	font-size: 18px;
+	color:rgb(91, 112, 112)
+}
+
+@media (max-width: 800px) {
+	.header {
+		flex-direction: column;
+        justify-content: flex-start;
+		align-items: center;
+		gap: 15px;
+	}
+	.text {
+		grid-template-columns: 1fr;
+	}
+}
+
+.author {
+	font-size: 15px;
+	font-weight: 400;
+	color: rgb(214, 59, 59);
+	text-align: center;
+	padding: 20px;
 }
