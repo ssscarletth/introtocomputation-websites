@@ -41,9 +41,15 @@
 body {
 	margin: 0;
 	min-height: 100vh;
-	background-color:rgb(255, 255, 255);
 	display: grid;
     grid-template-rows: 1fr auto 1fr;
+	background-color: #fffdfd;
+   background-color: #fffdfd;
+    background-image:
+    radial-gradient(circle at 8% 18%, #899e6c93 0%, transparent 40%),
+    radial-gradient(circle at 58% 62%, hsla(30, 50%, 24%, 0.328) 0%, transparent 40%),
+    radial-gradient(circle at 88% 30%, #cd5e2a70 0%, transparent 35%);
+
 }
 
 

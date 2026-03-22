@@ -12,6 +12,8 @@
 body {
 	font-family: monospace;
 	background-color: rgb(249, 249, 249);
+	margin: 0;
+    padding: 40px 60px;
 }
 
 p {
@@ -25,6 +27,25 @@ p {
 	max-width: 800px;
 	border-top: 15px solid rgb(109, 52, 52);
 }
+
+.nav {
+	margin-bottom: 80px;
+}
+
+.nav a{
+	font-size: 15px;
+	font-weight: bold;
+	color:black;
+	letter-spacing: 1px;
+	margin-right: 40px;
+	text-decoration: none;
+}
+
+.nav a:hover {
+	color: sienna;
+	text-decoration: underline;
+}
+
 
 .intro {
 	background-color: sienna;
